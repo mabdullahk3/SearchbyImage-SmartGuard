@@ -7,12 +7,9 @@ from pymongo import MongoClient
 import certifi
 
 # MongoDB Connection
-ca = certifi.where()
-client = MongoClient("mongodb+srv://i211176:36775@cluster0.vjz8j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",tlsCAFile=ca)
+client = MongoClient("mongodb+srv://i211176:36775@cluster0.vjz8j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 db = client["SmartGuard"]
 collection = db["knownOffenders"]
-print(collection.find_one())
-
 
 # Thresholds and Model Loading
 CONFIDENCE_THRESHOLD = 0.70
