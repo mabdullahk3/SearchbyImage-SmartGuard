@@ -1,0 +1,8 @@
+Flask
+opencv-python
+keras-facenet
+scikit-learn
+pymongo
+numpy
+Werkzeug
+Pillow
