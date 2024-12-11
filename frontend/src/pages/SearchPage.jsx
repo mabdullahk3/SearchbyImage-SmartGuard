@@ -74,7 +74,7 @@ export default function SearchByImagePage() {
 
       {isLoading && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <div className="bg-[#361e8b] p-8 rounded-lg flex flex-col items-center">
+          <div className="bg-[#9f24c2] p-8 rounded-lg flex flex-col items-center">
             <Loader2 className="w-12 h-12 animate-spin mb-4" />
             <p>Loading results...</p>
           </div>
@@ -88,7 +88,7 @@ export default function SearchByImagePage() {
       )}
 
       {searchResults && (
-        <div className="bg-[#361e8b] p-6 rounded-lg">
+        <div className="bg-[#9f24c2] p-6 rounded-lg">
           <h2 className="text-xl font-semibold mb-4">Search Results</h2>
           <p className="mb-2">Name: {searchResults.name}</p>
           <p className="mb-4">Date: {searchResults.date}</p>
